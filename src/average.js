@@ -13,13 +13,12 @@
 */
 
 const average = (exer1) => {
-  
   let somatorio = 0;
     if (exer1.length === 0) {
       return undefined;
     }
-  for (i = 0; i < exer1.length; i += 1) {
-    if (typeof exer1[i] === "number") {
+  for (let i = 0; i < exer1.length; i += 1) {
+    if (typeof exer1[i] === 'number') {
       let inteiro = Math.round(exer1[i]);
       somatorio += exer1[i];
     } else {
